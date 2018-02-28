@@ -51,22 +51,67 @@ public class calculadoradevdd extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         botao1.setText("1");
+        botao1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao1ActionPerformed(evt);
+            }
+        });
 
         botao2.setText("2");
+        botao2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao2ActionPerformed(evt);
+            }
+        });
 
         botao3.setText("3");
+        botao3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao3ActionPerformed(evt);
+            }
+        });
 
         botao4.setText("4");
+        botao4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao4ActionPerformed(evt);
+            }
+        });
 
         botao5.setText("5");
+        botao5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao5ActionPerformed(evt);
+            }
+        });
 
         botao6.setText("6");
+        botao6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao6ActionPerformed(evt);
+            }
+        });
 
         botao7.setText("7");
+        botao7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao7ActionPerformed(evt);
+            }
+        });
 
         botao8.setText("8");
+        botao8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao8ActionPerformed(evt);
+            }
+        });
 
         botao9.setText("9");
+        botao9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao9ActionPerformed(evt);
+            }
+        });
 
         botaosoma.setText("+");
         botaosoma.addActionListener(new java.awt.event.ActionListener() {
@@ -76,12 +121,32 @@ public class calculadoradevdd extends javax.swing.JFrame {
         });
 
         botaosubtracao.setText("-");
+        botaosubtracao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaosubtracaoActionPerformed(evt);
+            }
+        });
 
         botaomulti.setText("*");
+        botaomulti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaomultiActionPerformed(evt);
+            }
+        });
 
         botaodivisao.setText("/");
+        botaodivisao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaodivisaoActionPerformed(evt);
+            }
+        });
 
         botaoapagar.setText("apagar");
+        botaoapagar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoapagarActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("resultado");
 
@@ -203,15 +268,301 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(botao0.getActionCommand());
       if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
       operando2=Integer.parseInt(botao0.getActionCommand());
+       }else{
+          operando1=Integer.parseInt(botao0.getActionCommand());
+      }
+           
       if(operacao=='+'){
           resul=operando1+operando2;
       resultado.setText(String.valueOf(resul));
       }
-      }else{
-          operando1=Integer.parseInt(botao0.getActionCommand());
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
       }
-              
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        
     }//GEN-LAST:event_botao0ActionPerformed
+
+    private void botao1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao1ActionPerformed
+        // TODO add your handling code here:
+              resultado.setText(botao1.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao1.getActionCommand());
+      
+            if(operacao=='+'){
+                resul=operando1+operando2;
+            resultado.setText(String.valueOf(resul));
+            }
+             if(operacao=='-'){
+                resul=operando1-operando2;
+            resultado.setText(String.valueOf(resul));
+            }
+              if(operacao=='*'){
+                resul=operando1*operando2;
+            resultado.setText(String.valueOf(resul));
+            }
+               if(operacao=='/'){
+                resul=operando1/operando2;
+            resultado.setText(String.valueOf(resul));
+            }
+      
+      
+        }
+      
+       
+      
+      else{
+          operando1=Integer.parseInt(botao1.getActionCommand());
+      }
+     
+    
+    }//GEN-LAST:event_botao1ActionPerformed
+
+    private void botaosubtracaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaosubtracaoActionPerformed
+        // TODO add your handling code here:
+         operacao=botaosubtracao.getActionCommand().charAt(0);
+    }//GEN-LAST:event_botaosubtracaoActionPerformed
+
+    private void botaomultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaomultiActionPerformed
+        // TODO add your handling code here:
+         operacao=botaomulti.getActionCommand().charAt(0);
+    }//GEN-LAST:event_botaomultiActionPerformed
+
+    private void botaodivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaodivisaoActionPerformed
+        // TODO add your handling code here:
+         operacao=botaodivisao.getActionCommand().charAt(0);
+    }//GEN-LAST:event_botaodivisaoActionPerformed
+
+    private void botao2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao2ActionPerformed
+        // TODO add your handling code here:
+                 resultado.setText(botao2.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao2.getActionCommand());
+       
+      if(operacao=='+'){
+          resul=operando1+operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+    
+      
+      }
+      else{
+          operando1=Integer.parseInt(botao2.getActionCommand());
+      }
+      
+    }//GEN-LAST:event_botao2ActionPerformed
+
+    private void botao3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao3ActionPerformed
+        // TODO add your handling code here:
+                 resultado.setText(botao3.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao3.getActionCommand());
+      if(operacao=='+'){
+          resul=operando1+operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+      }else{
+          operando1=Integer.parseInt(botao3.getActionCommand());
+      }
+    }//GEN-LAST:event_botao3ActionPerformed
+
+    private void botao4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao4ActionPerformed
+        // TODO add your handling code here:
+                 resultado.setText(botao4.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao4.getActionCommand());
+      if(operacao=='+'){
+          resul=operando1+operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+      }else{
+          operando1=Integer.parseInt(botao4.getActionCommand());
+      }
+    }//GEN-LAST:event_botao4ActionPerformed
+
+    private void botao5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao5ActionPerformed
+        // TODO add your handling code here:
+                 resultado.setText(botao5.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao5.getActionCommand());
+      if(operacao=='+'){
+          resul=operando1+operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+      }else{
+          operando1=Integer.parseInt(botao5.getActionCommand());
+      }
+    }//GEN-LAST:event_botao5ActionPerformed
+
+    private void botao6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao6ActionPerformed
+        // TODO add your handling code here:
+                 resultado.setText(botao6.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao6.getActionCommand());
+      if(operacao=='+'){
+          resul=operando1+operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+      }else{
+          operando1=Integer.parseInt(botao6.getActionCommand());
+      }
+    }//GEN-LAST:event_botao6ActionPerformed
+
+    private void botao7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao7ActionPerformed
+        // TODO add your handling code here:
+                 resultado.setText(botao7.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao7.getActionCommand());
+      if(operacao=='+'){
+          resul=operando1+operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+      }else{
+          operando1=Integer.parseInt(botao7.getActionCommand());
+      }
+    }//GEN-LAST:event_botao7ActionPerformed
+
+    private void botao8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao8ActionPerformed
+        // TODO add your handling code here:
+                 resultado.setText(botao8.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao8.getActionCommand());
+      if(operacao=='+'){
+          resul=operando1+operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+      }else{
+          operando1=Integer.parseInt(botao8.getActionCommand());
+      }
+    }//GEN-LAST:event_botao8ActionPerformed
+
+    private void botao9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao9ActionPerformed
+        // TODO add your handling code here:
+                 resultado.setText(botao9.getActionCommand());
+      if(operacao=='+'||operacao=='-'||operacao=='/'||operacao=='*'){
+      operando2=Integer.parseInt(botao9.getActionCommand());
+      
+      if(operacao=='+'){
+          resul=operando1+operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+       if(operacao=='-'){
+          resul=operando1-operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+        if(operacao=='*'){
+          resul=operando1*operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+         if(operacao=='/'){
+          resul=operando1/operando2;
+      resultado.setText(String.valueOf(resul));
+      }
+      }else{
+          operando1=Integer.parseInt(botao9.getActionCommand());
+      }
+      
+      
+    }//GEN-LAST:event_botao9ActionPerformed
+
+    private void botaoapagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoapagarActionPerformed
+        // TODO add your handling code here:
+        operacao='.';
+        resultado.setText(String.valueOf("0"));
+        
+    }//GEN-LAST:event_botaoapagarActionPerformed
       
     /**
      * @param args the command line arguments

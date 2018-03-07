@@ -29,126 +29,33 @@ public class calculadoradevdd extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        botao1 = new javax.swing.JButton();
-        botao2 = new javax.swing.JButton();
-        botao3 = new javax.swing.JButton();
-        botao4 = new javax.swing.JButton();
-        botao5 = new javax.swing.JButton();
-        botao6 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        resultado = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         botao7 = new javax.swing.JButton();
         botao8 = new javax.swing.JButton();
         botao9 = new javax.swing.JButton();
-        botaosoma = new javax.swing.JButton();
-        botaosubtracao = new javax.swing.JButton();
-        botaomulti = new javax.swing.JButton();
         botaodivisao = new javax.swing.JButton();
-        botaoapagar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        resultado = new javax.swing.JTextField();
+        botao4 = new javax.swing.JButton();
+        botao5 = new javax.swing.JButton();
+        botao6 = new javax.swing.JButton();
+        botaomulti = new javax.swing.JButton();
+        botao1 = new javax.swing.JButton();
+        botao2 = new javax.swing.JButton();
+        botao3 = new javax.swing.JButton();
+        botaosubtracao = new javax.swing.JButton();
         botao0 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        botaosoma = new javax.swing.JButton();
+        botaoapagar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        botao1.setText("1");
-        botao1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao1ActionPerformed(evt);
-            }
-        });
-
-        botao2.setText("2");
-        botao2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao2ActionPerformed(evt);
-            }
-        });
-
-        botao3.setText("3");
-        botao3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao3ActionPerformed(evt);
-            }
-        });
-
-        botao4.setText("4");
-        botao4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao4ActionPerformed(evt);
-            }
-        });
-
-        botao5.setText("5");
-        botao5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao5ActionPerformed(evt);
-            }
-        });
-
-        botao6.setText("6");
-        botao6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao6ActionPerformed(evt);
-            }
-        });
-
-        botao7.setText("7");
-        botao7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao7ActionPerformed(evt);
-            }
-        });
-
-        botao8.setText("8");
-        botao8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao8ActionPerformed(evt);
-            }
-        });
-
-        botao9.setText("9");
-        botao9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao9ActionPerformed(evt);
-            }
-        });
-
-        botaosoma.setText("+");
-        botaosoma.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaosomaActionPerformed(evt);
-            }
-        });
-
-        botaosubtracao.setText("-");
-        botaosubtracao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaosubtracaoActionPerformed(evt);
-            }
-        });
-
-        botaomulti.setText("*");
-        botaomulti.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaomultiActionPerformed(evt);
-            }
-        });
-
-        botaodivisao.setText("/");
-        botaodivisao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaodivisaoActionPerformed(evt);
-            }
-        });
-
-        botaoapagar.setText("apagar");
-        botaoapagar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoapagarActionPerformed(evt);
-            }
-        });
+        setBackground(new java.awt.Color(51, 255, 51));
+        getContentPane().setLayout(new java.awt.GridLayout(-1, 4));
 
         jLabel2.setText("resultado");
+        getContentPane().add(jLabel2);
 
         resultado.setEditable(false);
         resultado.addActionListener(new java.awt.event.ActionListener() {
@@ -156,101 +63,143 @@ public class calculadoradevdd extends javax.swing.JFrame {
                 resultadoActionPerformed(evt);
             }
         });
+        getContentPane().add(resultado);
+        getContentPane().add(jLabel3);
+        getContentPane().add(jLabel4);
 
+        botao7.setBackground(new java.awt.Color(153, 153, 153));
+        botao7.setForeground(new java.awt.Color(0, 51, 51));
+        botao7.setText("7");
+        botao7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao7);
+
+        botao8.setBackground(new java.awt.Color(204, 0, 204));
+        botao8.setText("8");
+        botao8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao8);
+
+        botao9.setBackground(new java.awt.Color(0, 204, 153));
+        botao9.setText("9");
+        botao9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao9);
+
+        botaodivisao.setText("/");
+        botaodivisao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaodivisaoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botaodivisao);
+
+        botao4.setBackground(new java.awt.Color(0, 0, 255));
+        botao4.setForeground(new java.awt.Color(255, 51, 51));
+        botao4.setText("4");
+        botao4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao4);
+
+        botao5.setForeground(new java.awt.Color(0, 255, 204));
+        botao5.setText("5");
+        botao5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao5);
+
+        botao6.setForeground(new java.awt.Color(255, 51, 0));
+        botao6.setText("6");
+        botao6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao6);
+
+        botaomulti.setText("*");
+        botaomulti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaomultiActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botaomulti);
+
+        botao1.setBackground(new java.awt.Color(51, 255, 0));
+        botao1.setForeground(new java.awt.Color(0, 0, 255));
+        botao1.setText("1");
+        botao1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao1);
+
+        botao2.setBackground(new java.awt.Color(255, 255, 51));
+        botao2.setText("2");
+        botao2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao2);
+
+        botao3.setText("3");
+        botao3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botao3);
+
+        botaosubtracao.setText("-");
+        botaosubtracao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaosubtracaoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botaosubtracao);
+
+        botao0.setBackground(new java.awt.Color(51, 255, 0));
+        botao0.setForeground(new java.awt.Color(51, 0, 255));
         botao0.setText("0");
         botao0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao0ActionPerformed(evt);
             }
         });
+        getContentPane().add(botao0);
+        getContentPane().add(jLabel5);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(130, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(270, 270, 270))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(botaoapagar)
-                        .addGap(44, 44, 44))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(botaosoma)
-                        .addGap(18, 18, 18)
-                        .addComponent(botaosubtracao)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botaomulti)
-                                .addGap(18, 18, 18)
-                                .addComponent(botaodivisao))
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(botao0)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(botao7)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(botao8))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(botao4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(botao5))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(botao1)
-                                    .addGap(44, 44, 44)
-                                    .addComponent(botao2))))
-                        .addGap(50, 50, 50)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(botao3)
-                            .addComponent(botao6)
-                            .addComponent(botao9))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(botao0)
-                .addGap(11, 11, 11)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botao1)
-                    .addComponent(botao2)
-                    .addComponent(botao3))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botao4)
-                    .addComponent(botao5)
-                    .addComponent(botao6))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botao7)
-                    .addComponent(botao8)
-                    .addComponent(botao9))
-                .addGap(1, 1, 1)
-                .addComponent(botaoapagar)
-                .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botaosoma)
-                    .addComponent(botaosubtracao)
-                    .addComponent(botaomulti)
-                    .addComponent(botaodivisao))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        botaosoma.setText("+");
+        botaosoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaosomaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botaosoma);
+
+        botaoapagar.setIcon(new javax.swing.ImageIcon("C:\\Users\\IFMS\\Downloads\\lixeira.jpg")); // NOI18N
+        botaoapagar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoapagarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botaoapagar);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -310,7 +259,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
             resultado.setText(String.valueOf(resul));
             }
                if(operacao=='/'){
-                resul=operando1/operando2;
+                resul=(float)operando1/operando2;
             resultado.setText(String.valueOf(resul));
             }
       
@@ -360,7 +309,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(String.valueOf(resul));
       }
          if(operacao=='/'){
-          resul=operando1/operando2;
+          resul=(float)operando1/operando2;
       resultado.setText(String.valueOf(resul));
       }
     
@@ -390,7 +339,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(String.valueOf(resul));
       }
          if(operacao=='/'){
-          resul=operando1/operando2;
+          resul=(float)operando1/operando2;
       resultado.setText(String.valueOf(resul));
       }
       }else{
@@ -416,7 +365,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(String.valueOf(resul));
       }
          if(operacao=='/'){
-          resul=operando1/operando2;
+          resul=(float)operando1/operando2;
       resultado.setText(String.valueOf(resul));
       }
       }else{
@@ -442,7 +391,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(String.valueOf(resul));
       }
          if(operacao=='/'){
-          resul=operando1/operando2;
+          resul=(float)operando1/operando2;
       resultado.setText(String.valueOf(resul));
       }
       }else{
@@ -468,7 +417,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(String.valueOf(resul));
       }
          if(operacao=='/'){
-          resul=operando1/operando2;
+          resul=(float)operando1/operando2;
       resultado.setText(String.valueOf(resul));
       }
       }else{
@@ -494,7 +443,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(String.valueOf(resul));
       }
          if(operacao=='/'){
-          resul=operando1/operando2;
+          resul=(float)operando1/operando2;
       resultado.setText(String.valueOf(resul));
       }
       }else{
@@ -520,7 +469,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(String.valueOf(resul));
       }
          if(operacao=='/'){
-          resul=operando1/operando2;
+          resul=(float)operando1/operando2;
       resultado.setText(String.valueOf(resul));
       }
       }else{
@@ -547,7 +496,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
       resultado.setText(String.valueOf(resul));
       }
          if(operacao=='/'){
-          resul=operando1/operando2;
+          resul=(float)operando1/operando2;
       resultado.setText(String.valueOf(resul));
       }
       }else{
@@ -601,7 +550,7 @@ public class calculadoradevdd extends javax.swing.JFrame {
 private int operando1;
 private int operando2;
 private char operacao;
-private int resul;
+private float resul;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botao0;
@@ -619,8 +568,10 @@ private int resul;
     private javax.swing.JButton botaomulti;
     private javax.swing.JButton botaosoma;
     private javax.swing.JButton botaosubtracao;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField resultado;
     // End of variables declaration//GEN-END:variables
 }
